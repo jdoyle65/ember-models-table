@@ -11,6 +11,11 @@ module.exports = async function (defaults) {
     'bundle-analyzer': {
       ignoreTestFiles: false,
     },
+    autoImport: {
+      alias: {
+        'ember-composable-helpers': '@nullvoxpopuli/ember-composable-helpers',
+      },
+    },
     sourcemaps: {
       enabled: true,
       extensions: ['js'],
