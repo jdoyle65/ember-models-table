@@ -25,6 +25,9 @@ module.exports = async function (defaults) {
       theme: 'tomorrow',
       components: ['scss', 'javascript', 'handlebars', 'markup-templating'],
     },
+    'ember-bootstrap': {
+      whitelist: ['bs-button', 'bs-form', 'bs-modal', 'bs-navbar', 'bs-nav', 'bs-dropdown'] // Ensure bs-button is here
+    },
     'ember-composable-helpers': {
       only: [
         'intersect',
